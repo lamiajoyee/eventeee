@@ -18,54 +18,93 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
-    <!-- Start your project here-->
-    <div class="no-gutters " id="topPortion">
-		<!-- Content here -->
-
-        
-  <div id="particles-js" class="col row"></div>
-       
-
-  <div class="row col" id="mainInfo">
-		<section class="col-4 align-self-end text-right" >
-          
-
+<body class="container-fluid customNoSpace">
+    <header id="topPortion">
+      <div id="particles-js" class="row customNoSpace"></div>
+      <div class="row customNoSpace" id="mainInfo">
+          <section class="col-4 align-self-end text-right">
             <div id="content">
-                <figure class="figure col-4">
-                    <img src="img/logo.png" class="figure-img img-fluid">
+                <figure class="figure col-4 customNoSpace" id="logo">
+                  <img src="img/logo.png" class="figure-img img-fluid customNoSpace">
                 </figure>
-
-                <article class="col">
-                    <div id="type">
-                        <span>Seminar</span>
-                        <span>ON</span>
-                    </div>
-
-                    <div class="col" id="title">
-                        <span class="row text-uppercase">How to be a complete UX failure</span>
-                    </div>
-
-                    <div id="author">
-                        <span>BY</span>
-                        <span>Fiyaz Bin Hasan</span>
-                    </div>
-
+                <article class="row">
+                  <div id="type" class="col">
+                      <span class="h4-responsive">Seminar</span>
+                      <span>ON</span>
+                  </div>
+                  <div class="col-12" id="title">
+                      <span class="text-uppercase">How to be a complete UX failure</span>
+                  </div>
+                  <div id="author" class="col">
+                      <span>BY</span>
+                      <span class="h4-responsive">Fiyaz Bin Hasan</span>
+                  </div>
                 </article>
             </div>
-        </section>
+          </section>
+          <section class="col-8 customNoSpace" id="banner">
+            <!--Carousel Wrapper-->
+            <div class="carousel slide carousel-fade" data-ride="carousel">
+                <!--Indicators-->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                </ol>
+                <!--/.Indicators-->
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                      <div class="view hm-black-light">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                        <div class="mask"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <h3 class="h3-responsive">Light mask</h3>
+                        <p>First text</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <!--Mask color-->
+                      <div class="view hm-black-strong">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                        <div class="mask"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <h3 class="h3-responsive">Strong mask</h3>
+                        <p>Secondary text</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <!--Mask color-->
+                      <div class="view hm-black-slight">
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                        <div class="mask"></div>
+                      </div>
+                      <div class="carousel-caption">
+                        <h3 class="h3-responsive">Slight mask</h3>
+                        <p>Third text</p>
+                      </div>
+                  </div>
+                </div>
+                <!--/.Slides-->
+                <!--Controls-->
+                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+                <!--/.Controls-->
+            </div>
+            <!--/.Carousel Wrapper-->
+          </section>
+      </div>
+    </header>
 
-        <section class="col-8 no-gutters" id="banner"> 
-           <figure class="figure col">
-                <img src="img/banner.png" class="figure-img img-fluid col ">
-            </figure>
-        </section>
-  </div>
-       
-    </div>
-	
-
+    
     <!-- /Start your project here-->
 
     <!-- SCRIPTS -->
@@ -82,18 +121,21 @@
     <script type="text/javascript" src="js/particles.min.js"></script>
     
     <script>
-        jQuery("#title span").fitText(1.2, { minFontSize: '20px', maxFontSize: '80px' });
+        jQuery("#title").fitText(1.2, { minFontSize: '30px', maxFontSize: '80px' });
 
 function setWidth() {
   var canvas = document.getElementsByClassName("particles-js-canvas-el")[0];  
   var mainInfo = document.getElementById('mainInfo');
-  canvas.height = mainInfo.clientHeight;
-  canvas.style.height = mainInfo.clientHeight;
+  canvas.height = mainInfo.clientHeight ;
+  canvas.style.height = mainInfo.clientHeight ;
   console.log(mainInfo.clientHeight);
 }
 
 $(document).ready(function() {
  setWidth();
+});
+$(window).resize(function() {
+  setWidth();
 });
         particlesJS('particles-js',
     {

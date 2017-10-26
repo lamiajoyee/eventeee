@@ -3,22 +3,26 @@ body{
 }
 figure{
     margin: 0;
+    height: 100%;
+}
+.customNoSpace{
+    margin: 0;
+    padding: 0;
 }
 #mainInfo
 {
+    position: absolute;
+    top:0;
+    width: 100%;
+}
+#topPortion{
     background: #3a6186;  
     background: -webkit-linear-gradient(left, #89253e, #3a6186);
     background: -moz-linear-gradient(left, #89253e, #3a6186);
     background: -o-linear-gradient(left, #89253e, #3a6186);
     background: linear-gradient(40deg,#303f9f,#1976d2);   
-    position: absolute;
-    top:0;
-    margin: 0;
-   
 }
 #topPortion img{
-    padding: 0;
-    margin: 0;
     z-index: 102;
 }
 #title span{
@@ -26,15 +30,18 @@ figure{
     font-family: 'Anton', sans-serif;
 }
 #type span:nth-child(1){
-    font-size: 2em;
-    font-style: italic;
-    color: whitesmoke;
+    color: #eeefee;
 }
 #author span:nth-child(2){
-    font-size: 2em;
-    color: whitesmoke;
+    color: #eeefee;
 }
 #particles-js{
-    z-index: 99;
+    z-index: 999;
+    
 }
-
+#fullBody{
+    
+}
+#logo{
+    
+}
