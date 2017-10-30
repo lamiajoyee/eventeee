@@ -5,43 +5,93 @@ figure{
     margin: 0;
     height: 100%;
 }
+aside img{
+    border:1px solid #e6e6e6; 
+}
+aside section:not(:first-child){
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+#location .h3{
+    line-height: 1.75em;
+    margin-left: 0.5em;
+}
+
+/*anton font*/
+.fontAnton{
+    font-family: 'Anton', sans-serif;
+}
+
+/*small text*/
+.smallText{
+    font-size: 0.8em;
+}
+
+/*override margin, padding*/
 .customNoSpace{
     margin: 0;
     padding: 0;
 }
-#mainInfo
-{
+
+/*header above particles background*/
+#mainInfo{
     position: absolute;
     top:0;
     width: 100%;
 }
-#topPortion{
-    background: #3a6186;  
-    background: -webkit-linear-gradient(left, #89253e, #3a6186);
-    background: -moz-linear-gradient(left, #89253e, #3a6186);
-    background: -o-linear-gradient(left, #89253e, #3a6186);
-    background: linear-gradient(40deg,#303f9f,#1976d2);   
-}
 #topPortion img{
     z-index: 102;
 }
-#title span{
-    font-weight: 400;
-    font-family: 'Anton', sans-serif;
-}
-#type span:nth-child(1){
-    color: #eeefee;
-}
-#author span:nth-child(2){
-    color: #eeefee;
-}
 #particles-js{
     z-index: 999;
-    
 }
-#fullBody{
-    
+
+/*gradients*/
+.blueGradient{
+    background: #303f9f;  
+    background: -webkit-linear-gradient(40deg,#303f9f,#1976d2);
+    background: -moz-linear-gradient(40deg,#303f9f,#1976d2);
+    background: -o-linear-gradient(40deg,#303f9f,#1976d2);
+    background: linear-gradient(40deg,#303f9f,#1976d2);   
 }
-#logo{
-    
+.purpleGradient{
+    background: #4527a0;  
+    background: -webkit-linear-gradient(30deg,#4527a0,#7b1fa2);
+    background: -moz-linear-gradient(30deg,#4527a0,#7b1fa2);
+    background: -o-linear-gradient(30deg,#4527a0,#7b1fa2);
+    background: linear-gradient(30deg,#4527a0,#7b1fa2);   
+}
+
+/*header texts*/
+#title span{
+    font-weight: 400;
+}
+#author{
+    margin-bottom: 1em;
+}
+
+/*date*/
+#date span:nth-child(1){
+    font-size: 38px;
+}
+#date span:nth-child(2){
+    font-size: 60px;
+    line-height: 36px;
+}
+
+/*gray colors*/
+.gray1{
+    color: #e6e6e6;
+}
+.gray2{
+    color: #adadad;
+}
+.gray10{
+    color: #272727;
+}
+
+
+.wrapper{
+    padding: 1em 2em; 
 }
