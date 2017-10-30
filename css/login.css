@@ -1,0 +1,28 @@
+body,html{
+    height:100%;
+}
+.btn{
+    margin: 0!important;
+    padding: 0.5em!important;
+    font-family: 'Anton', cursive;
+    font-size: 2em!important;
+}
+.btn .fa{
+    font-size: 1.5em;
+    margin-right:12px;
+}
+.md-form label{
+    font-size: 1.5em;
+    font-family: 'Anton', cursive;
+}
+#orText{
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+/*tmp classes*/
+h4{
+    color: gray;
+}
+.primary-color {
+    background-color:red!important;
+}
