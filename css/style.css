@@ -47,22 +47,6 @@ aside section:not(:first-child){
     z-index: 999;
 }
 
-/*gradients*/
-.blueGradient{
-    background: #303f9f;  
-    background: -webkit-linear-gradient(40deg,#303f9f,#1976d2);
-    background: -moz-linear-gradient(40deg,#303f9f,#1976d2);
-    background: -o-linear-gradient(40deg,#303f9f,#1976d2);
-    background: linear-gradient(40deg,#303f9f,#1976d2);   
-}
-.purpleGradient{
-    background: #4527a0;  
-    background: -webkit-linear-gradient(30deg,#4527a0,#7b1fa2);
-    background: -moz-linear-gradient(30deg,#4527a0,#7b1fa2);
-    background: -o-linear-gradient(30deg,#4527a0,#7b1fa2);
-    background: linear-gradient(30deg,#4527a0,#7b1fa2);   
-}
-
 /*header texts*/
 #title span{
     font-weight: 400;
@@ -78,17 +62,6 @@ aside section:not(:first-child){
 #date span:nth-child(2){
     font-size: 60px;
     line-height: 36px;
-}
-
-/*gray colors*/
-.gray1{
-    color: #e6e6e6;
-}
-.gray2{
-    color: #adadad;
-}
-.gray10{
-    color: #272727;
 }
 
 
