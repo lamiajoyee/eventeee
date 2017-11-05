@@ -3,9 +3,9 @@ body,html{
 }
 .btn{
     margin: 0!important;
-    padding: 0.5em!important;
+    padding: 0.8em!important;
     font-family: 'Anton', cursive;
-    font-size: 2em!important;
+    font-size: 1.5em!important;
 }
 .btn .fa{
     font-size: 1.5em;
